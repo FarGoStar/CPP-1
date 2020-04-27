@@ -26,13 +26,13 @@ list<double> get_list(string fname)
 	ifstream ifs;
 	ifs.open(fname, ios::in);
 	if (!ifs)
-		throw exception("Файл не существует");
+		throw exception("Р¤Р°Р№Р» РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
 	list<double> l;
 	double num;
 	while (ifs >> num)
 		l.push_back(num);
 	if (l.size() == 0)
-		cout << "Файл пуст" << endl;
+		cout << "Р¤Р°Р№Р» РїСѓСЃС‚" << endl;
 	return l;
 }
 
